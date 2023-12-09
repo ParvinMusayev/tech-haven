@@ -5,7 +5,7 @@ import Link from 'next/link'
 import { Category } from '../../../payload/payload-types'
 import CategoryCard from './CategoryCard'
 
-const Categories = ({ categories } : {categories: Category[]}) => {
+const Categories = ({ categories }: { categories: Category[] }) => {
   return (
     <section className={classes.container}>
       <div className={classes.titleWrapper}>
@@ -14,7 +14,7 @@ const Categories = ({ categories } : {categories: Category[]}) => {
       </div>
 
       <div className={classes.list}>
-        {categories.map((category) => (
+        {categories.map(category => (
           <CategoryCard key={category.id} category={category} />
         ))}
       </div>
